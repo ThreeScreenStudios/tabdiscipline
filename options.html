@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Options for TooManyTabs</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type='text/javascript' src='options.js'></script>
+	<style>
+		body{
+	        font-family: 'Noto Sans', sans-serif;
+	      }
+	      img{
+	      	vertical-align: middle;
+	      	margin-right: 10px;
+	      }
+	      .subheader
+	      {
+	      	font-style: italic;
+	      	margin-top: 0px;
+	      }
+	      h3
+	      {
+	      	padding-bottom: 0px;
+	      	margin-bottom: 0px;
+	      }
+	      #limitoption
+	      {
+	      	margin-top:15px;
+	      }
+	</style>
+</head>
+<body>
+	<h2>TooManyTabs Options</h2>
+	<h3>Tab limits</h3>
+	<div>
+		<p class='subheader'>Set how many tabs you can open before TooManyTabs changes faces.</p>
+	</div>
+	<div>
+		<p>Super happy face</p>
+		<img src="images/0.png"/> <input id='superhappybox' type='text'/>
+	</div>
+	<div>
+		<p>Happy face</p>
+		<img src="images/1.png"/> <input id='happybox' type='text'/>
+	</div>
+	<div>
+		<p>Neutral face</p>
+		<img src="images/2.png"/> <input id='neutralbox' type='text'/>
+	</div>
+	<div>
+		<p>Sad face / tab limit</p>
+		<img src="images/3.png"/> <input id='sadbox' type='text'/>
+	</div>
+	<div id='limitoption'>
+		<input id='limitbox' type='checkbox'/><label for='limitbox'>Limit the number of tabs you can have at one time (limit is set to the 'tab limit' number above)</label>
+	</div>
+	<br />
+	<br />
+	<button id='savebutton'>Save Options</button>
+</body>
+</html>

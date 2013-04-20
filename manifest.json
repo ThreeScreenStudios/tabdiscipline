@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "TooManyTabs",
+  "description": "Tab problem spiraling out of control? Let us help you keep tabs on your tabs.",
+  "version": "1.0",
+  "options_page": "options.html",
+  "icons" : {"48": "icon48.png", "128":"icon128.png"},
+
+  "browser_action": {
+    "default_icon": "images/0.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+ {
+  "matches": ["https://*/*"],
+"js": ["jquery.min.js","popup.js"]
+ }],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
