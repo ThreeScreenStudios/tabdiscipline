@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "TooManyTabs",
+  "name": "TabDiscipline",
   "description": "Tab problem spiraling out of control? Let us help you keep tabs on your tabs.",
   "version": "1.0",
   "options_page": "options.html",
